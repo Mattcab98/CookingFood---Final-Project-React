@@ -33,15 +33,18 @@ const recetasTop = [
 const RecipeTop = () => {
   return (
     <>
-      <div className="container-fluid container__recipe">
-        {recetasTop.map((recetasTop) => (
-          <CardRecipe
-            key={recetasTop.id}
-            img={recetasTop.img}
-            title={recetasTop.title}
-            description={recetasTop.description}
-          />
-        ))}
+      <div className="container__recetasTop">
+        <h2>RECETAS RECOMENDADAS</h2>
+        <div className="container-fluid container__recipe">
+          {recetasTop.map((recetasTop) => (
+            <CardRecipe
+              key={recetasTop.id}
+              img={recetasTop.img}
+              title={recetasTop.title}
+              description={recetasTop.description}
+            />
+          ))}
+        </div>
       </div>
     </>
   )

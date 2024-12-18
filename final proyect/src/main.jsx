@@ -12,12 +12,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';  // Para los scripts de Boot
 import './main.css';
 import Header from './components/home/header';
 import RecipeTop from './components/recipeTop/recipeTop';
-
+import CreateRecipe from './components/createRecipe/createRecipe';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <RecipeTop />               
+    <RecipeTop />
+    <CreateRecipe />               
   </React.StrictMode>
 );
