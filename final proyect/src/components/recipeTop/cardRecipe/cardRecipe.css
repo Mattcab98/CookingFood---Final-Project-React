@@ -1,0 +1,47 @@
+.card {
+    width: 200px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--color-4);
+    color: var(--color-5);
+    font-size: .8em;
+    transition: transform .3s linear;
+}
+
+.contain__imgCard {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.contain__imgCard img {
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    top: -10;
+    right: 0;
+    bottom:0;
+    left: 0;
+    margin: auto; 
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contain__txtCard button {
+    width: 70%;
+    scale: .85;
+}
+
+.starRecipe {
+    color: yellow;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform .2s linear;
+}

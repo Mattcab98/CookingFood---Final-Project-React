@@ -1,0 +1,26 @@
+.container__product {
+    width: 80vw;
+    background-color: #55555515;
+    border-radius: 10px;
+    box-shadow: 2px 5px 15px #0009;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(200px, 1fr)
+    );
+    place-self: center;
+    place-items: center;
+    margin: 10px 0;
+}
+
+/* @media (min-width:400px) {
+    .container__product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:720px) {
+    .container__product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */

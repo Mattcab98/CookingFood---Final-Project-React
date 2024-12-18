@@ -1,0 +1,160 @@
+* {
+    --color-1: #DCE4C9;
+    --color-2: #F5F5DC;
+    --color-3: #B6A28E;
+    --color-4: #E07B39;
+    --color-5: #fff;
+    --color-6: #000;
+}
+
+#logo {
+    color: var(--color-5);
+    font-weight: 600;
+}
+
+.nav {
+    /* background-color: red; */
+}
+
+#navbarNav {
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#navbarNav a {
+    color: var(--color-5);
+}
+
+#navbarNav a:active {
+    color: var(--color-6);
+    text-shadow: 2px 2px 8px var(--color-6);
+    transition: all .4s ease;
+}
+
+#navbarNav button {
+    width: 100%;
+    scale: .7;
+}
+
+.contain__hero {
+    position: relative;
+    background-color: #E07B39;
+    transition: background-color 1.5s ease;
+}
+
+.hero {
+    background-image: url('./image/platoHeader.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.circleHero {
+    display: none;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 50% 50% 0px;
+    animation: circle50 3s linear both;
+}
+
+.container__txtHero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-5);
+    background-color: #e4742993;
+    transition: background-color 1.5s linear;
+}
+
+.container__txtHero h1 {
+    font-size: 3.3em;
+    color: var(--color-5);
+}
+
+.container__txtHero h4, .container__txtHero p {
+    font-weight: 600;
+    max-width: 600px;
+    transition: max-width 1s linear;
+}
+
+.container__txtHero .txt__topH1, .container__txtHero .txt__bottomH1 {
+    font-size: .8em;
+    font-weight: 400;
+    width: 300px;
+}
+
+.buttonHero {
+    width: 100%;
+}
+
+
+@media (min-width:768px) {
+    .contain__hero {
+        background-color: var(--color-5);
+    }
+
+    .hero {
+        background-image: none;
+        text-align: end;
+        height: 340px;
+        background-color: var(--color-5);
+        border-radius: 3px;
+    }
+
+    .circleHero {
+        display: block;
+        position: absolute;
+        background-image: url(./image/platoHeader.png);
+        background-color: var(--color-4);
+
+    }
+
+    .container__txtHero {
+        align-items: end;
+        transition: aling-items 1s linear;
+        background-color: transparent;
+        position: relative;
+        z-index: 100;
+        color: var(--color-6);
+        transition: background-color 1.5s ease;
+        
+    }
+
+    .container__txtHero h1 {
+        color: var(--color-4);
+    }
+
+    .buttonHero {
+        width: 30%; 
+    }
+}
+
+@media (min-width:992px) {
+    .hero {
+        height: 400px;
+        transition: height .8s linear;
+    }
+
+    .circleHero {
+    }
+}
+
+@keyframes circle50 {
+    from {
+        width: 50%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
