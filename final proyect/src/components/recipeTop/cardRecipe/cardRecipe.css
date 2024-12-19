@@ -32,6 +32,15 @@
     border-radius: 50%;
 }
 
+.contain__txtCard h3 {
+    font-size: 1.4em;
+    color: var(--color-2);
+}
+
+.contain__txtCard p {
+    font-size: .85em;
+}
+
 .contain__txtCard button {
     width: 70%;
     scale: .85;
