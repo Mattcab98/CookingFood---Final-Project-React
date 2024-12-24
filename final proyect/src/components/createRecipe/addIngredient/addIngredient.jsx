@@ -1,14 +1,11 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './addIngredient.css';
 import Items from '../items/items.jsx'
 
 const AddIngredient = () => {
 
   const startingData = [
-    { title: '#1 ITEM', id: Date.now() + 1 },
-    { title: '#2 ITEM', id: Date.now() + 2 },
-    { title: '#3 ITEM', id: Date.now() + 3 },
   ]
 
   const [currentItems, setCurrentItem] = useState(startingData);
@@ -29,8 +26,8 @@ const AddIngredient = () => {
         <div className="ingredientes__list-input">
           <input
             value={newItemTitle}
-            onChange={(e) => {
-              setNewItemTitle(e.target.value);
+            onChange={(event) => {
+              setNewItemTitle(event.target.value);
             }}
             type="text" placeholder='Agregue sus ingredientes' />
           <button
