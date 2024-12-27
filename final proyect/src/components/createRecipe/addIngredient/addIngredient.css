@@ -2,19 +2,28 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 
 .ingredientes__list-input {
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
 }
 
 .ingredientes__list-input input {
     border-radius: 15px;
     border: none;
-    padding: 0 10px;
+    padding: 0 10px; 
+    background-color: var(--color-4);
+    color: var(--color-5);
+}
+
+.ingredientes__list-input input::placeholder {
+    color: var(--color-5);
+    font-size: .8em;
+    padding: 5px;
+    color: var(--color-5);
 }
 
 .ingredientes__list-input button {
@@ -28,9 +37,9 @@
 }
 
 
-.ingredientes__list-input button:active {
+.ingredientes__list-input button:hover {
     background-color: green;
-    transition: all .8s linear;
+    transition: all .5s linear;
 }
 
 
@@ -38,6 +47,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    margin-left: 30px;
 }
 
 .elementos__list {

@@ -1,7 +1,7 @@
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './addIngredient.css';
-import Items from '../items/items.jsx'
+import Items from './items/items.jsx'
 
 const AddIngredient = () => {
 
@@ -21,8 +21,8 @@ const AddIngredient = () => {
 
   return (
     <>
-      <div className="container__ingredientes">
-        <h2>Ingredientes</h2>
+      <div className="container container__ingredientes">
+        <h2>Ingredientes</h2>                         
         <div className="ingredientes__list-input">
           <input
             value={newItemTitle}

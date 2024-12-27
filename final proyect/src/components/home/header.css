@@ -10,15 +10,15 @@
 #logo {
     color: var(--color-5);
     font-weight: 600;
+    background-color: var(--color-4);
 }
 
-.nav {
-    /* background-color: red; */
+nav {
+    background-color: var(--color-4);
 }
 
 #navbarNav {
     text-align: center;
-    border-radius: 10px;
     margin: 20px;
 }
 
@@ -112,11 +112,11 @@
     }
 
     .circleHero {
-        display: block;
+        display: flex;
+        max-width: 450px;
         position: absolute;
         background-image: url(./image/platoHeader.png);
         background-color: var(--color-4);
-
     }
 
     .container__txtHero {

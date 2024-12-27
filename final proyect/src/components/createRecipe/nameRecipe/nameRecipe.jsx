@@ -26,7 +26,7 @@ const NameRecipe = ({ agregarTarea }) => {
 
     return (
         <>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className="form__nameRecipe">
                 <input
                     type="text"
                     placeholder='Nombre Receta'
@@ -34,6 +34,7 @@ const NameRecipe = ({ agregarTarea }) => {
                     disabled={isSubmitted}
                 />
                 <button
+                id="btn-nameRecipe"
                 className="btn btn-warning"
                 type="submit"
                 disabled = {isSubmitted || !inputValue.trim()}
