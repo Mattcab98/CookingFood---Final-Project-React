@@ -31,13 +31,12 @@ const recetasTop = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
   },
 
-
 ];
 
 const RecipeTop = () => {
   return (
     <>
-      <div className=" container container__recetasTop">
+      <div className=" container-fluid container__recetasTop">
         <h2>RECETAS RECOMENDADAS</h2>
         <div className="container-fluid container__recipe">
           {recetasTop.map((recetasTop) => (

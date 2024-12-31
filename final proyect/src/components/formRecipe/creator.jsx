@@ -32,6 +32,7 @@ const Creator = ({ createReceta }) => {
             ingrediente: addIngrediente.join('\n')
         }
 
+
         createReceta(crearReceta);
         setNewName('');
         setAddIngrediente([]);
@@ -81,6 +82,7 @@ const Creator = ({ createReceta }) => {
 
                 <textarea
                     className="descriptionRecipe"
+                    placeholder='1- Pasos a seguir'
                     name=""
                     id=""
                     value={newDescripcion}

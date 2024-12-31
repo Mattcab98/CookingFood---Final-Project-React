@@ -6,9 +6,7 @@ const Footer = () => {
     return (
         <>
             <div className="container__footer">
-                <div className="container__logo">
-                    <a href="#">CookingFood</a>
-                </div>
+                <a className='logo' href="#">CookingFood</a>
                 <hr />
                 <div className="container__left">
                     <div>
@@ -19,12 +17,12 @@ const Footer = () => {
                     <p>Este sitio web y su contenido están protegidos por las leyes de derechos de autor.</p>
                 </div>
                 <div className="container__right">
-                    <FontAwesomeIcon icon={faFacebook} />
-                    <FontAwesomeIcon icon={faInstagram} />
-                    <FontAwesomeIcon icon={faTwitch} />
-                    <FontAwesomeIcon icon={faWhatsapp} />
-                    <FontAwesomeIcon icon={faYoutube} />
-                    <FontAwesomeIcon icon={faPinterest} />
+                    <FontAwesomeIcon icon={faFacebook}  className='i'/>
+                    <FontAwesomeIcon icon={faInstagram}  className='i'/>
+                    <FontAwesomeIcon icon={faTwitch}  className='i'/>
+                    <FontAwesomeIcon icon={faWhatsapp}  className='i'/>
+                    <FontAwesomeIcon icon={faYoutube}  className='i'/>
+                    <FontAwesomeIcon icon={faPinterest}  className='i'/>
                 </div>
             </div>
         </>

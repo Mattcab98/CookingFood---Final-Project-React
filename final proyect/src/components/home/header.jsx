@@ -36,7 +36,7 @@ const header = () => {
           </div>
         </nav>
 
-        <section className='container contain__hero'>
+        <section className='container-fluid contain__hero'>
           <div className="hero">
           <div className="circleHero"></div>
             <div className="container__txtHero">

@@ -1,0 +1,41 @@
+.container__footer {
+    background-color:var(--color-4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-2);
+    font-size: .8em;
+}
+
+.logo {
+   text-decoration: none;
+   color: var(--color-2);
+   font-size: 1.7rem; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 600;
+}
+
+.container__left {
+    width: 100%;
+    padding: 10px;
+}
+
+.container__right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.8em;
+    padding: 10px;
+}
+
+.i {
+    transition: scale .2s linear;
+
+}
+
+.i:hover, .i:active {
+    scale: 1.3;
+    color: gold;
+    transition: scale .5s linear;
+}

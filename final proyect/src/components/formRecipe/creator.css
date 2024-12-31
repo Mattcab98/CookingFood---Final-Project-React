@@ -4,7 +4,23 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    height: auto;
+    margin-bottom: 60px;
+
+
+    opacity: 0;
+    transform: translateY(200px);
+    
+    view-timeline-name: --form;
+    view-timeline-axis: block;
+    
+    animation-timeline: --form;
+    animation-name: see;
+
+    animation-range: entry 40% cover 55%;
+    animation-fill-mode: both;
 }
+
 
 form h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -17,13 +33,33 @@ form h3 {
 input, textarea {
     border-radius: 15px;
     border: none;
-    padding: 5px;
     width: 90%;
+    max-width: 400px;
+    height: 30px;
+    font-size: .7rem;
+    padding: 20px;
+}
+
+input::placeholder {
+    font-size: 13px;
+}
+
+.descriptionRecipe {
+    height: 55px;
+    font-size: .7rem;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.descriptionRecipe:focus {
+    height: 200px;
 }
 
 .container__ingredient {
     width: 90%;
+    max-width: 400px;
     display: flex;
+    justify-content: center;
 }
 
 .button__addIngredient, .button__removeIngredient {
@@ -32,17 +68,17 @@ input, textarea {
 }
 
 .ul__addIngredient {
-    width: 100%;
+    width: 90%;
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 1fr;
     list-style: none;
-    gap: 8px;
-    
+    gap: 6px; 
 }  
 
 .ul__addIngredient li {
-    border: 1px solid white;
     position: relative;
+    font-size: .85rem;
+    color: var(--color-2);
 }
 
 .button__removeIngredient {
@@ -54,4 +90,26 @@ input, textarea {
     position: absolute;
     top: -8px;
     right: 10px;
+}
+
+@media (min-width:767px) {
+    .ul__addIngredient {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        list-style: none;
+        gap: 6px; 
+    }  
+}
+
+@keyframes see {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

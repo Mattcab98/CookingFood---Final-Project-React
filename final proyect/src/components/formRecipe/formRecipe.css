@@ -1,0 +1,74 @@
+.misRecetasCreadas {
+    color: var(--color-2);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.container__miReceta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+    background-color: var(--color-2);
+}
+
+.miReceta {
+    width: 200px;
+    height: 220px;
+    background-color: var(--color-4);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 5px 3px 8px var(--color-3);
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: .8rem;
+    opacity: .9;
+    transition: all 1s ease-out;
+    outline: 3px solid rgba(245, 222, 179, 0.644);
+}
+
+.miReceta:hover, .miReceta:active {
+    opacity: 1;
+    transform: scale(1.05);
+    height: 400px;
+    transition: all .6s ease-out;
+}
+
+.recetaId {
+    font-size: .5rem;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.miReceta h3 {
+    color: var(--color-2);
+    font-size: 1.3rem;
+}
+
+.descripRecipe {
+    width: 100%;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.ingredientes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.ingredientes h3 {
+    font-size: 1.1rem;
+    grid-column: 1/3;
+}
+
+
+@media  (min-width:767px) {
+    .container__miReceta {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
