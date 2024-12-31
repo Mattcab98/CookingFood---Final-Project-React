@@ -11,13 +11,18 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';  // Para los scripts de Boot
 import './main.css';
 import Header from './components/home/header';
 import RecipeTop from './components/recipeTop/recipeTop';
-import CreateRecipe from './components/createRecipe/createRecipe';
+// import CreateRecipe from './components/createRecipe/createRecipe' 
+import FormRecipe from './components/formRecipe/formRecipe';
+import Footer from './components/footer/footer'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
     <RecipeTop />
-    <CreateRecipe/>               
+    {/* <CreateRecipe /> */}
+    <FormRecipe />
+    <Footer/>
   </React.StrictMode>
 );
