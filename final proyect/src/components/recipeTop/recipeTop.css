@@ -9,6 +9,11 @@
     align-items: center;
     text-align: center;
     padding: 50px 0px;
+    overflow: hidden;
+}
+
+.container__slider {
+    overflow: hidden;
 }
 
 .container__recipe {
@@ -16,8 +21,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 50px;
+    position: relative;
+    z-index: 100;
+    transform: translateX(615px);
+}
+
+.container__recipe .card {
+    animation-name: moveCards;
+    animation-duration: 25s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+.container__slider.paused .card {
+    animation-play-state: paused;
 }
 
 .container__recetasTop h2 {
@@ -32,11 +51,53 @@
     .container__recetasTop {
         border-radius: 160px 0px 0px 160px;
     }
-
+    
     .container__recipe {
         gap: 50px;
         padding: 50px 0px;
+        transform: translateX(350px);
         transition: border-radius 1s ease-out;
+    }
+    
+    .container__recipe .card {
+        animation-name: moveCardsDesk;
+    }
+    
+    .container__recipe .card:hover, .container__recipe .card:active {
+        scale: 1.1;
+        transition: all .5s linear;
+    } 
+
+}
+@media (min-width:1000px) {
+    .container__recipe {
+        transform: translateX(300px);
+        gap: 80px;
+    }
+
+    .container__recipe .card {
+        animation-name: moveCardsDesk;
     }
 
 }
+
+@keyframes moveCards {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-500%);
+    }
+}
+@keyframes moveCardsDesk {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-260%);
+    }
+}
+
+

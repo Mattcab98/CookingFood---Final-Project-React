@@ -31,13 +31,6 @@
     outline: 3px solid rgba(245, 222, 179, 0.644);
 }
 
-.miReceta:hover, .miReceta:active {
-    opacity: 1;
-    transform: scale(1.05);
-    height: 400px;
-    transition: all .6s ease-out;
-}
-
 .recetaId {
     font-size: .5rem;
     padding: 10px;
