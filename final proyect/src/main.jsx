@@ -21,7 +21,6 @@ root.render(
   <React.StrictMode>
     <Header />
     <RecipeTop />
-    {/* <CreateRecipe /> */}
     <FormRecipe />
     <Footer/>
   </React.StrictMode>
